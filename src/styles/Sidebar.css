@@ -1,0 +1,124 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar-profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.sidebar-header h2 {
+  font-size: 1.5rem;
+  color: #ffa500;
+}
+
+.sidebar-header p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar-menu li {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.sidebar-menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  display: block;
+  padding: 10px 20px;
+  transition: background 0.3s;
+}
+
+.sidebar-menu li a:hover {
+  background-color: #ffa500;
+  border-radius: 5px;
+}
+
+.active-link {
+  background-color: #ffa500;
+  color: white;
+  border-radius: 5px;
+}
+
+.sidebar-social {
+  margin-top: auto; /* Pushes the social media icons to the bottom */
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Spacing between icons */
+}
+
+.sidebar-social a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.sidebar-social a:hover {
+  color: #ffa500; /* Hover color */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Slightly reduce width on mobile */
+    padding: 15px; /* Reduce padding */
+  }
+
+  .sidebar-header h2 {
+    font-size: 1.25rem; /* Smaller font size for the header */
+  }
+
+  .sidebar-header p {
+    font-size: 0.9rem; /* Smaller font size for the paragraph */
+  }
+
+  .sidebar-menu li a {
+    font-size: 1rem; /* Adjust font size for menu links */
+    padding: 8px 10px; /* Adjust padding */
+  }
+
+  .sidebar-social a {
+    font-size: 1.2rem; /* Adjust icon size */
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%; /* Full width on very small screens */
+    position: relative; /* Change positioning for mobile */
+    height: auto; /* Remove fixed height */
+  }
+
+  .sidebar-header {
+    margin-bottom: 20px; /* Adjust margin */
+  }
+
+  .sidebar-social {
+    margin-top: 20px; /* Adjust margin for social icons */
+  }
+}

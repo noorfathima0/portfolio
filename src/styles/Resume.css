@@ -1,0 +1,86 @@
+/* Basic resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.resume-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9; /* Light background color for contrast */
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #333; /* Dark color for the heading */
+  text-align: center;
+  margin-bottom: 40px; /* Spacing below the heading */
+}
+
+.resume-content {
+  display: flex;
+  justify-content: space-around; /* Distribute education and experience evenly */
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the content */
+}
+
+.resume-education, .resume-experience {
+  flex: 1;
+  background-color: #fff; /* White background for sections */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-education:hover, .resume-experience:hover {
+  transform: translateY(-5px); /* Lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #ffa500; /* Accent color for section titles */
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: translateX(10px); /* Slight slide effect on hover */
+}
+
+h4 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 1rem;
+  color: #777; /* Slightly muted color for descriptions */
+}
+
+p:last-child {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .resume-content {
+    flex-direction: column; /* Stack the education and experience vertically on small screens */
+    gap: 20px;
+  }
+}
