@@ -42,7 +42,7 @@ const Sidebar = () => {
         <a href="https://github.com/noorfathima0" target="_blank" rel="noopener noreferrer">
           <FaGithub />
         </a>
-        <a href="https://www.linkedin.com/in/noorfathima" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/noorfathima0" target="_blank" rel="noopener noreferrer">
           <FaLinkedin />
         </a>
         <a href="https://twitter.com/noorfathima" target="_blank" rel="noopener noreferrer">
