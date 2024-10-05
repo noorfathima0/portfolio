@@ -17,7 +17,7 @@ h2, h3, p {
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .App {
-    display: block; /
+    display: block; 
   }
 
   .content {
