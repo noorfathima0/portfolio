@@ -11,8 +11,8 @@ body {
 
 .projects-section {
   padding: 50px 20px;
-  background-color: #f9f9f9; /* Light background color */
-  text-align: center; /* Center align everything */
+  background-color: #f9f9f9; 
+  text-align: center; 
 }
 
 h2 {
@@ -27,7 +27,7 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
   max-width: 1200px;
-  margin: 0 auto; /* Center the project grid */
+  margin: 0 auto; 
 }
 
 /* Individual project item */
@@ -40,8 +40,8 @@ h2 {
 }
 
 .project-item:hover {
-  transform: translateY(-5px); /* Lift on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 .project-image {
@@ -52,7 +52,7 @@ h2 {
 
 h4 {
   font-size: 1.6rem;
-  color: #ffa500; /* Accent color */
+  color: #ffa500; 
   margin-bottom: 10px;
 }
 

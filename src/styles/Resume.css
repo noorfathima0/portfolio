@@ -11,46 +11,46 @@ body {
 
 .resume-section {
   padding: 50px 20px;
-  background-color: #f9f9f9; /* Light background color for contrast */
+  background-color: #f9f9f9; 
 }
 
 h2 {
   font-size: 2.5rem;
-  color: #333; /* Dark color for the heading */
+  color: #333; 
   text-align: center;
-  margin-bottom: 40px; /* Spacing below the heading */
+  margin-bottom: 40px; 
 }
 
 .resume-content {
   display: flex;
-  justify-content: space-around; /* Distribute education and experience evenly */
+  justify-content: space-around; 
   gap: 40px;
   max-width: 1200px;
-  margin: 0 auto; /* Center the content */
+  margin: 0 auto; 
 }
 
 .resume-education, .resume-experience {
   flex: 1;
-  background-color: #fff; /* White background for sections */
+  background-color: #fff; 
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .resume-education:hover, .resume-experience:hover {
-  transform: translateY(-5px); /* Lift on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 h3 {
   font-size: 1.8rem;
-  color: #ffa500; /* Accent color for section titles */
+  color: #ffa500; 
   margin-bottom: 20px;
 }
 
 ul {
-  list-style-type: none; /* Remove default bullet points */
+  list-style-type: none; 
   padding: 0;
 }
 
@@ -60,7 +60,7 @@ li {
 }
 
 li:hover {
-  transform: translateX(10px); /* Slight slide effect on hover */
+  transform: translateX(10px); 
 }
 
 h4 {
@@ -71,7 +71,7 @@ h4 {
 
 p {
   font-size: 1rem;
-  color: #777; /* Slightly muted color for descriptions */
+  color: #777; 
 }
 
 p:last-child {
@@ -80,7 +80,7 @@ p:last-child {
 
 @media (max-width: 768px) {
   .resume-content {
-    flex-direction: column; /* Stack the education and experience vertically on small screens */
+    flex-direction: column; 
     gap: 20px;
   }
 }

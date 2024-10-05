@@ -4,9 +4,9 @@
 }
 
 .content {
-  margin-left: 250px; /* Adjust this to match the sidebar width */
+  margin-left: 250px; 
   padding: 20px;
-  width: calc(100% - 250px); /* Adjust according to sidebar width */
+  width: calc(100% - 250px); 
 }
 
 h2, h3, p {
@@ -17,23 +17,23 @@ h2, h3, p {
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .App {
-    display: block; /* Stack content on smaller screens */
+    display: block; /
   }
 
   .content {
     margin-left: 0;
-    width: 100%; /* Full width for content on smaller screens */
-    padding: 15px; /* Adjust padding for smaller screens */
+    width: 100%; 
+    padding: 15px; 
   }
 }
 
 @media (max-width: 480px) {
   .content {
-    padding: 10px; /* Further reduce padding for very small screens */
+    padding: 10px; 
   }
 
   h2, h3, p {
-    margin-bottom: 8px; /* Adjust margins for smaller text spacing */
-    line-height: 1.4; /* Adjust line height for readability */
+    margin-bottom: 8px; 
+    line-height: 1.4; 
   }
 }
