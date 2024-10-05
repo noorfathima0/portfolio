@@ -67,10 +67,10 @@
 }
 
 .sidebar-social {
-  margin-top: auto; 
+  margin-top: auto; /* Pushes the social media icons to the bottom */
   display: flex;
   justify-content: center;
-  gap: 15px; 
+  gap: 15px; /* Spacing between icons */
 }
 
 .sidebar-social a {
@@ -80,7 +80,7 @@
 }
 
 .sidebar-social a:hover {
-  color: #ffa500; 
+  color: #ffa500; /* Hover color */
 }
 
 /* Mobile responsiveness */
@@ -108,51 +108,43 @@
   }
 }
 
+/* Mobile view: convert sidebar to header */
 @media (max-width: 480px) {
-  /* On very small screens, transform sidebar to a header */
   .sidebar {
-    width: 100%;
+    width: 100%; /* Full width on very small screens */
     height: auto;
     position: relative;
     background-color: #333;
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 15px;
+    padding: 10px 20px;
   }
 
   .sidebar-header {
-    margin-bottom: 0;
+    margin: 0;
     display: flex;
-    flex-direction: row;
     align-items: center;
   }
 
   .sidebar-profile-img {
     width: 50px;
     height: 50px;
-    margin-right: 10px;
+    margin-right: 10px; /* Space between image and text */
   }
 
-  .sidebar-header h2 {
+  .sidebar-header h2, .sidebar-header p {
     font-size: 1rem;
-    margin: 0;
-    color: #ffa500;
+    color: white;
   }
 
-  .sidebar-header p {
-    font-size: 0.8rem;
-    color: #ddd;
-    margin: 0;
-  }
-
-  /* Make menu items inline */
   .sidebar-menu {
     display: flex;
-    flex-direction: row;
-    padding: 0;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
     margin: 0;
+    padding: 0;
+    flex-grow: 1;
   }
 
   .sidebar-menu li {
@@ -160,19 +152,11 @@
   }
 
   .sidebar-menu li a {
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 5px 10px;
   }
 
-  /* Adjust social media links */
   .sidebar-social {
-    margin-top: 0;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
-
-  .sidebar-social a {
-    font-size: 1.2rem;
+    display: none; /* Hide social icons in mobile view */
   }
 }
